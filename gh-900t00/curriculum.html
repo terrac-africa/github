@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum | GH-900T00</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style> body { font-family: 'Plus Jakarta Sans', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-900 pt-20">
+
+    <nav class="bg-white border-b border-slate-200 fixed top-0 w-full z-50 h-16 flex items-center px-8 justify-between">
+        <div class="font-extrabold text-blue-600">TERRACLOUD <span class="text-slate-400 font-normal ml-2">GH-900T00</span></div>
+        <div class="space-x-6 text-sm font-semibold">
+            <a href="index.html" class="text-slate-500 hover:text-blue-600">Overview</a>
+            <a href="curriculum.html" class="text-blue-600">Modules</a>
+            <a href="labs.html" class="text-slate-500 hover:text-blue-600">Labs</a>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-6 py-10">
+        <h1 class="text-4xl font-bold mb-2">Course Modules</h1>
+        <p class="text-slate-500 mb-10">From Git fundamentals to Enterprise Automation.</p>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm mb-6 flex gap-6">
+            <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center flex-shrink-0 text-xl">
+                <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">Module 1: Git Foundations</h3>
+                <p class="text-slate-600 mt-2 text-sm">Understanding Distributed Version Control. Moving from legacy systems to Git. Configuring the local environment (User, Email, SSH).</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm mb-6 flex gap-6">
+            <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 text-xl">
+                <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">Module 2: The GitHub Flow</h3>
+                <p class="text-slate-600 mt-2 text-sm">Branching strategies, Pull Requests, Code Reviews, and merging. Handling conflicts in a team environment.</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm mb-6 flex gap-6">
+            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 text-xl">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">Module 3: GitHub Actions (CI/CD)</h3>
+                <p class="text-slate-600 mt-2 text-sm">Automating workflows. Writing YAML files for testing, building, and deploying code automatically.</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm mb-6 flex gap-6">
+            <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center flex-shrink-0 text-xl">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">Module 4: Security & Governance</h3>
+                <p class="text-slate-600 mt-2 text-sm">Secret Scanning, Dependabot, and managing permissions in an Enterprise organization.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
