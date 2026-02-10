@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs | GH-900T00</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style> body { font-family: 'Plus Jakarta Sans', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-900 pt-20">
+
+    <nav class="bg-white border-b border-slate-200 fixed top-0 w-full z-50 h-16 flex items-center px-8 justify-between">
+        <div class="font-extrabold text-blue-600">TERRACLOUD <span class="text-slate-400 font-normal ml-2">GH-900T00</span></div>
+        <div class="space-x-6 text-sm font-semibold">
+            <a href="index.html" class="text-slate-500 hover:text-blue-600">Overview</a>
+            <a href="curriculum.html" class="text-slate-500 hover:text-blue-600">Modules</a>
+            <a href="labs.html" class="text-blue-600">Labs</a>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-6 py-10 grid lg:grid-cols-4 gap-8">
+        
+        <div class="lg:col-span-1">
+            <div class="sticky top-24">
+                <h3 class="font-bold text-slate-900 mb-4">Lab Navigation</h3>
+                <ul class="space-y-2 text-sm text-slate-600">
+                    <li><a href="#setup" class="hover:text-blue-600">1. Environment Setup</a></li>
+                    <li><a href="#init" class="hover:text-blue-600">2. Init & Commit</a></li>
+                    <li><a href="#branch" class="hover:text-blue-600">3. Branching</a></li>
+                    <li><a href="#pr" class="hover:text-blue-600">4. Pull Requests</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-12">
+            
+            <section id="setup">
+                <h2 class="text-2xl font-bold flex items-center gap-3">
+                    <span class="bg-slate-900 text-white w-8 h-8 rounded flex items-center justify-center text-sm">1</span>
+                    Environment Setup
+                </h2>
+                <p class="mt-2 text-slate-600">Configure your local Git identity. This is required for your commits to be attributed correctly.</p>
+                <div class="mt-4 bg-slate-900 rounded-lg p-4 overflow-x-auto">
+                    <code class="text-green-400 font-mono text-sm">
+                        git config --global user.name "Your Name"<br>
+                        git config --global user.email "your.email@terrac.co.za"<br>
+                        git config --list
+                    </code>
+                </div>
+            </section>
+
+            <section id="init">
+                <h2 class="text-2xl font-bold flex items-center gap-3">
+                    <span class="bg-slate-900 text-white w-8 h-8 rounded flex items-center justify-center text-sm">2</span>
+                    Init & Commit
+                </h2>
+                <p class="mt-2 text-slate-600">Create a new directory and initialize it as a Git repository.</p>
+                <div class="mt-4 bg-slate-900 rounded-lg p-4 overflow-x-auto">
+                    <code class="text-green-400 font-mono text-sm">
+                        mkdir my-project<br>
+                        cd my-project<br>
+                        git init<br>
+                        echo "# My Project" >> README.md<br>
+                        git add README.md<br>
+                        git commit -m "First commit"
+                    </code>
+                </div>
+            </section>
+
+             <section id="branch">
+                <h2 class="text-2xl font-bold flex items-center gap-3">
+                    <span class="bg-slate-900 text-white w-8 h-8 rounded flex items-center justify-center text-sm">3</span>
+                    Branching Strategy
+                </h2>
+                <p class="mt-2 text-slate-600">Never commit directly to main. Create a feature branch.</p>
+                <div class="mt-4 bg-slate-900 rounded-lg p-4 overflow-x-auto">
+                    <code class="text-green-400 font-mono text-sm">
+                        git checkout -b feature/update-docs<br>
+                        # Make some changes to README.md<br>
+                        git status<br>
+                        git add .<br>
+                        git commit -m "Updated documentation"<br>
+                        git push origin feature/update-docs
+                    </code>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>
